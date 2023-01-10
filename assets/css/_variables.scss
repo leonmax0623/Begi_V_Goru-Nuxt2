@@ -1,0 +1,13 @@
+// colors
+$main-gradient-color: linear-gradient(115deg, rgba(76,59,146,1) 0%, rgba(237,59,75,1) 100%);
+$main-gradient-color-reverse: linear-gradient(115deg, rgba(237,59,75,1) 0%, rgba(76,59,146,1) 100%);
+$outlined-btn-bg-color: #fff;
+$secondary: #00162b;
+$accent: #4c3b92;
+$grey: #a9a9a9;
+$danger: #d30e0e;
+
+// identations
+$max-content-width: 1440px ; 
+$left-indent-content: calc((100% - #{$max-content-width}) / 2);
+

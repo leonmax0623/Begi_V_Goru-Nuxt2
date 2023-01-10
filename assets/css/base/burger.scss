@@ -1,0 +1,30 @@
+.bg-burger {
+  display: block;
+  width: 21px;
+  height: 17px;
+  position: relative;
+  z-index: 2;
+
+  &__checkbox {
+    width: 28px;
+    height: 19px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 4px;
+    // background-color: #000;
+  }
+}

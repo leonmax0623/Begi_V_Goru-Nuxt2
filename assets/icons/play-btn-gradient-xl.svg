@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.281" height="47.88" viewBox="0 0 43.281 47.88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 6px;
+        fill-rule: evenodd;
+        stroke: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="280" y1="2220.06" x2="280" y2="2261.91" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ed3b4b"/>
+      <stop offset="1" stop-color="#4c3b92"/>
+    </linearGradient>
+  </defs>
+  <path id="Треугольник_805" data-name="Треугольник 805" class="cls-1" d="M296.636,2237.51a4,4,0,0,1,0,6.93l-29.305,16.92a4,4,0,0,1-6-3.46v-33.85a4,4,0,0,1,6-3.46Z" transform="translate(-258.344 -2217.03)"/>
+</svg>

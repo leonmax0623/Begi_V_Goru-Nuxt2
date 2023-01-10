@@ -1,0 +1,90 @@
+// Screen sizes
+$xl: 1684px;
+$lg: 1024px;
+$md: 768px;
+$sm: 375px;
+$xs: 320px;
+
+// Initial max-width
+$max-content-width: 1440px;
+
+// responsive max-width
+@mixin xl-max-width {
+  $max-content-width: 1080px;
+  max-width: $max-content-width;
+}
+@mixin lg-max-width {
+  $max-content-width: 960px;
+  max-width: $max-content-width;
+}
+@mixin md-max-width {
+  $max-content-width: 680px;
+  max-width: $max-content-width;
+}
+
+@mixin left-indent-content {
+  $left-indent-content: calc((100% - #{$max-content-width}) / 2);
+  margin-left: $left-indent-content;
+}
+
+@mixin responsive-content-width {
+  @media screen and (max-width: $xl) {
+    @include xl-max-width;
+  }
+  @media screen and (max-width: $lg) {
+    @include lg-max-width;
+  }
+ @media screen and (max-width: $md) {
+   max-width: 100%;
+  }
+}
+
+@mixin xxl {
+  @media screen and (min-width: 1441px) { @content; }
+}
+@mixin xl {
+  @media screen and (min-width: 1081px) and (max-width: 1440px) { @content; }
+}
+@mixin lg {
+  @media screen and (min-width: 931px) and (max-width: 1080px) { @content; }
+}
+@mixin md {
+  @media screen and (max-width: 930px) { @content; }
+}
+
+@mixin semi-wide_old {
+  @media screen and (min-width: 1281px) and (max-width: 1440px) { @content; }
+}
+@mixin desktop_old {
+  @media screen and (min-width: 1081px) and (max-width: 1280px) { @content; }
+}
+
+// content 1440
+@mixin wide {
+  @media screen and (min-width: 1741px) { @content; }
+}
+// content 1280
+// content 1080
+@mixin semi-wide {
+  @media screen and (min-width: 1081px) and (max-width: 1740px) { @content; }
+}
+@mixin desktop {
+  @media screen and (min-width: 1081px) and (max-width: 1740px) { @content; }
+}
+// content 100% && px 24px
+@mixin tablet {
+  @media screen and (min-width: 931px) and (max-width: 1080px) { @content; }
+}
+// content 100% && px 18px
+@mixin mobile {
+  @media screen and (max-width: 930px) { @content; }
+}
+
+@mixin hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
